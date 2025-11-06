@@ -1,3 +1,7 @@
+# writer: sajid_islam
+# pdf_to_word in case where pdf made up of image
+
+
 from pdf2image import convert_from_path
 from PIL import Image
 import pytesseract
@@ -5,11 +9,9 @@ from docx import Document
 import os
 
 # === CONFIGURATION ===
-pdf_path = "A-06.pdf"     # your input PDF file
+pdf_path = "A-06.pdf"     # your input PDF file name
 output_docx = "A-06.docx"
 poppler_path = r"C:\Program Files\poppler-25.07.0\Library\bin"
-
-# e.g., poppler_path = r"C:\Program Files\poppler-24.02.0\Library\bin"
 
 # === STEP 1: Convert PDF pages to images ===
 print("📄 Converting PDF pages to images...")
@@ -32,8 +34,3 @@ for i, page in enumerate(pages, start=1):
 # === STEP 4: Save DOCX file ===
 doc.save(output_docx)
 print(f"✅ Conversion complete! Saved as '{output_docx}'")
-
-
-
-
-# writer: sajid_islam
