@@ -1,0 +1,32 @@
+# === Python cache & bytecode ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === Virtual environments ===
+env/
+venv/
+.venv/
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === IDE or editor settings ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Output and test files ===
+*.pdf
+*.docx
+
+# === Logs or temp files ===
+*.log
+*.tmp
+
+# === Build/Packaging (if added later) ===
+build/
+dist/
+*.egg-info/
